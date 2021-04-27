@@ -1,0 +1,22 @@
+plugins {
+    //id 'org.springframework.boot' version '2.1.5.RELEASE'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
+}
+
+javafx {
+    version = '16'
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+dependencies {
+
+
+}
+
+shadowJar {
+    baseName = 'IMclient'
+    classifier = null
+    version = '0.0.1-beta'
+    zip64 = true
+    mainClassName = 'IMsystemClient.total'
+}

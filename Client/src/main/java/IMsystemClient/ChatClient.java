@@ -1,4 +1,4 @@
-package IMsystem.Client;
+package IMsystemClient;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;

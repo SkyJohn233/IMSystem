@@ -1,4 +1,4 @@
-package IMsystem.Server.DataCrontol;
+package IMsystemServer.DataCrontol;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.ReentrantLock;

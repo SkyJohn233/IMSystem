@@ -1,4 +1,4 @@
-package IMsystem.Server.Chatting;
+package IMsystemServer.Chatting;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelId;

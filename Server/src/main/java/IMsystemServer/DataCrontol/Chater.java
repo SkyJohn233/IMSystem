@@ -1,4 +1,4 @@
-package IMsystem.Server.DataCrontol;
+package IMsystemServer.DataCrontol;
 
 public class Chater {
     int cid;

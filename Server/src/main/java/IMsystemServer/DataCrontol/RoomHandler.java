@@ -1,6 +1,6 @@
-package IMsystem.Server.DataCrontol;
+package IMsystemServer.DataCrontol;
 
-import IMsystem.Server.Chatting.ServerChannelManager;
+import IMsystemServer.Chatting.ServerChannelManager;
 import io.netty.channel.*;
 
 @ChannelHandler.Sharable

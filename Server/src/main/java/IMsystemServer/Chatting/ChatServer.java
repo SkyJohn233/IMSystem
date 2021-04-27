@@ -1,6 +1,6 @@
-package IMsystem.Server.Chatting;
+package IMsystemServer.Chatting;
 
-import IMsystem.Server.DataCrontol.DataControl;
+import IMsystemServer.DataCrontol.DataControl;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;

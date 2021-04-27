@@ -1,4 +1,4 @@
-package IMsystem.Client;
+package IMsystemClient;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;

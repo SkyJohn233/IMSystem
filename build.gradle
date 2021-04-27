@@ -1,51 +1,72 @@
-plugins {
+/*
+plugins{
     id 'java'
-    id 'war'
+    id 'idea'
     id 'application'
-    id 'org.openjfx.javafxplugin' version '0.0.8'
-    id 'com.github.johnrengelman.shadow' version '5.2.0'
 }
 
-group 'skyjohn'
-version '1.0-SNAPSHOT'
-
-javafx{
-    version='16'
-    modules=['javafx.controls','javafx.fxml']
-}
-
-tasks.withType(JavaCompile){
-    options.encoding="UTF-8"
-}
-
-sourceCompatibility = 11
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    compile group: 'io.netty', name: 'netty-all',version: '4.1.63.Final'
-    compile("com.alibaba:fastjson:1.2.66")
-    testImplementation 'junit:junit:4.11'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-}
-
-sourceSets {
-    mainClassName = 'total'
-}
 jar {
     enabled = false
 }
+bootJar {
+    enabled = false
+}
+*/
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'application'
+    group 'skyjohn'
+    version '1.0-SNAPSHOT'
 
-shadowJar {
-    baseName = 'java-zikao'
-    classifier = null
-    version = '0.0.1-beta'
-    zip64 = true
-
-    manifest {
-        attributes 'Main-Class':'total'
+    repositories {
+        mavenCentral()
     }
+    jar {
+        enabled = false
+    }
+}
+
+subprojects {
+
+
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+
+    sourceCompatibility = 11
+
+
+
+    dependencies {
+
+        compile "io.netty:netty-all:4.1.63.Final"
+
+        compile "com.alibaba:fastjson:1.2.66"
+
+        testImplementation 'junit:junit:4.11'
+
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    }
+
+
+ /*
+    sourceSets {
+        //mainClassName = 'total'
+    }
+
+
+    shadowJar {
+        baseName = 'java-zikao'
+        classifier = null
+        version = '0.0.1-beta'
+        zip64 = true
+        manifest {
+            attributes 'Main-Class': 'total'
+        }
+    }
+
+  */
 }

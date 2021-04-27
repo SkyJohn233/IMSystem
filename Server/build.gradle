@@ -1,0 +1,29 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.5.RELEASE'
+    //id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
+
+}
+apply plugin: 'io.spring.dependency-management'
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-web"
+
+    compile "org.springframework.boot:spring-boot-starter-data-jpa"
+
+    compile "org.springframework.boot:spring-boot-starter-actuator"
+
+}
+
+bootJar {
+    enabled = false
+}
+shadowJar {
+    baseName = 'IMserver'
+    classifier = null
+    version = '0.0.1-beta'
+    zip64 = true
+    mainClassName = 'IMsystemServer.total'
+
+}
+

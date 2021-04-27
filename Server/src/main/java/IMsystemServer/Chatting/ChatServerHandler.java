@@ -1,8 +1,8 @@
-package IMsystem.Server.Chatting;
+package IMsystemServer.Chatting;
 
-import IMsystem.Server.DataCrontol.Chater;
-import IMsystem.Server.DataCrontol.DataControl;
-import IMsystem.Server.DataCrontol.Room;
+import IMsystemServer.DataCrontol.Chater;
+import IMsystemServer.DataCrontol.DataControl;
+import IMsystemServer.DataCrontol.Room;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import io.netty.buffer.ByteBuf;

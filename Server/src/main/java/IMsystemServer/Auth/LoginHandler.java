@@ -1,7 +1,7 @@
-package IMsystem.Server.Auth;
+package IMsystemServer.Auth;
 
-import IMsystem.Server.DataCrontol.DataControl;
-import IMsystem.Server.Chatting.ServerChannelManager;
+import IMsystemServer.DataCrontol.DataControl;
+import IMsystemServer.Chatting.ServerChannelManager;
 import io.netty.channel.*;
 
 @ChannelHandler.Sharable
