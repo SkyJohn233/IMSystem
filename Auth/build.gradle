@@ -20,11 +20,11 @@ bootJar {
     enabled = false
 }
 shadowJar {
-    baseName = 'IMserver'
+    baseName = 'AuthServer'
     classifier = null
     version = '0.0.1-beta'
     zip64 = true
-    mainClassName = 'IMsystemServer.total'
+    mainClassName = 'total'
 
 }
 

@@ -2,4 +2,6 @@ rootProject.name = 'IMsystem'
 
 include 'Server'
 include 'Client'
+include 'Auth'
+
 
